@@ -55,6 +55,7 @@ Some examples:
         > Q: How to get the google scholar paper ID?   
         > A: Enter your google scholar homepage and click the paper name. Then you can see the paper ID from `citation_for_view=XXXX`, where `XXXX` is the required paper ID.
 1. Your page will be published at `https://USERNAME.github.io`.
+·每次change之后要想修改必须在settings -> pages 重新选择branch重新部署
 
 ## Debug Locally
 
