@@ -41,16 +41,16 @@ Hi, my name is Huyang
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
 # 🚀 Projects
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
-
+- *2021.06*, 车赛的车，附视频 \| [\[video\]](https://github.com/)
+- *2021.03*, 包装一下阿里巴巴的项目x2
+- 无人机项目可以做个主页
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.10* 第十七届全国智能汽车大赛一等奖. 
+- *2021.09* 河钢奖学金. 
 
 # 📖 Educations
-- *2019.09 - 2023.06*, School of Automation, Chongqing University, China.
-- *2023.09 - now*, School of Automation, Southeast University, China.
+- *2023.09 - now*, Key Laboratory of Measurement and Control of CSE, School of Automation, Southeast University, China.
+- *2019.09 - 2023.06*, Undergraduate, Elite Engineer Program, School of Automation, Chongqing University, China.
 
 # 💻 Internships
 - *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
