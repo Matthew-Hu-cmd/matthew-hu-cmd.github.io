@@ -43,10 +43,12 @@ Hi, my name is Huyang
 # 🚀 Projects
 - *2021.06*, 车赛的车，附视频 \| [\[video\]](https://github.com/)
 - *2021.03*, 包装一下阿里巴巴的项目x2
-- 无人机项目可以做个主页
+- 无人机项目可以做个主页  
+
 # 🎖 Honors and Awards
 - *2021.10* 第十七届全国智能汽车大赛一等奖. 
-- *2021.09* 河钢奖学金. 
+- *2021.09* 河钢奖学金.
+- 优秀本科毕业论文
 
 # 📖 Educations
 - *2023.09 - now*, Key Laboratory of Measurement and Control of CSE, School of Automation, Southeast University, China.
