@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yang Hu (胡杨)"
-description              : "Master’s student at Southeast University, School of Automation, specializing in camouflage scene understanding (efficient segmentation, image generation). Possesses extensive practical experience in robotic engineering."
+description              : "Master’s student at Southeast University, specializing in camouflage scene understanding (efficient segmentation, image generation). Possesses extensive practical experience in robotic engineering."
 repository               : "RayeRen/acad-homepage.github.io"
 google_scholar_stats_use_cdn : true
 
