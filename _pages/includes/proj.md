@@ -3,23 +3,24 @@
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Aug. 2022</div><img src='images/qingzhou_robo.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-The First Prize in the Smart Logistics Project at the 17th National Undergraduate Intelligent Vehicle Competition. \| [\[video\]](https://github.com/) \| [\[ROS code\]](https://github.com/Matthew-Hu-cmd/qingzhou_ws_4/tree/qingzhou_ws) \| [\[STM32 code\]](https://github.com/Matthew-Hu-cmd/qingzhou_actuator)
+The First Prize in the Smart Logistics Project at the 17th National Undergraduate Intelligent Vehicle Competition. \| [\[video\]](https://www.bilibili.com/video/BV1JY2hYyExe/?vd_source=4fb60f32e60f8db85e505b94054e2449) \| [\[ROS code\]](https://github.com/Matthew-Hu-cmd/qingzhou_ws_4/tree/qingzhou_ws) \| [\[STM32 code\]](https://github.com/Matthew-Hu-cmd/qingzhou_actuator)
 
 - Execute commands from the host computer to shuttle between designated locations.
 - Use LiDAR for autonomous obstacle avoidance (ROS movebase).
 - Vision system to recognize traffic lights and navigate through S-shaped curves.
-- Control Ackermann robot chassis and serial communication with STM32 MCU.
+- Ackermann robot control and serial communication with STM32 MCU.
 - Implement L1 trajectory tracking algorithm for precise path control.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">2022</div><img src='images/auto-drone.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">2021.6-2022.6</div><img src='images/auto-drone.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-The National Undergraduate Innovation and Entrepreneurship Training Program, Chongqing University. \| [\[video\]](https://github.com/) \| [\[patent\]](https://github.com/Matthew-Hu-cmd/matthew-hu-cmd.github.io/blob/main/images/drone-patent.png)
+The National Undergraduate Innovation and Entrepreneurship Training Program, Chongqing University. \| [\[video\]](https://www.bilibili.com/video/BV1iZ28YBEdZ/?vd_source=4fb60f32e60f8db85e505b94054e2449) \| [\[patent\]](https://github.com/Matthew-Hu-cmd/matthew-hu-cmd.github.io/blob/main/images/certificate.md)
 
-- 
-- 
+- D435i depth camera and 2D LiDAR for acquiring depth information
+- EGO-planner for autonomous obstacle avoidance during movement
+- Remote-controlled cargo drop mechanism for precise delivery
 </div>
 </div>
 
@@ -46,8 +47,8 @@ Multimodal Fashion Image Editing. (Southeast University, collaborating with Alib
 
 - Aimed to improve the fashion editing capabilities of existing models.
 - Proposed an attention-enhanced diffusion model to improve the editing capabilities on fashion images.
-- 
-- 
+- Text-generated masks to control the general area and shape of the target image.
+- Outperformed existing models on metrics CLIP-TD and CLIP-H ,etc.
 </div>
 </div>
 

@@ -18,7 +18,7 @@ while also delivering superior performance.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Ongoing Research</div><img src='images/camoGen.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-Camouflage Image Generation with Text-Image Decoupling Prompt Mechanism
+Camouflage Image Generation with Text-Image Decoupling Prompt Mechanism \| \[Coming Soon\]
 
 - Construction of a Large-Scale Camouflaged Object Image-Text Pair Dataset
 - UNet with Text-Image Decoupled Cross-Attention
