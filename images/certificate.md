@@ -6,7 +6,7 @@
 **Issued by:** China Automation Society  
 **Date:** 2022
 
-![Smart Car Certificate](./images/smart-car-certificate.jpg)
+![Smart Car Certificate](../images/smart-car-certificate.jpg)
 
 This certificate was awarded for my participation in the national finals of the Aerospace Smart Logistics Group, where our team achieved First Prize in the 17th National Undergraduate Intelligent Vehicle Competition.
 
@@ -18,7 +18,7 @@ This certificate was awarded for my participation in the national finals of the 
 **Issued by:** China Aerospace Science & Industry Corp., Ltd  
 **Date:** August 20, 2022  
 
-![Aerospace Certificate](./images/aerospace-certificate.png)
+![Aerospace Certificate](../images/aerospace-certificate.png)
 
 This certificate was awarded for outstanding performance in the 3rd "Aerospace Cup" Mobile Robot AI Innovation Technology Challenge.
 
@@ -31,7 +31,7 @@ This certificate was awarded for outstanding performance in the 3rd "Aerospace C
 **Date:** September 2023  
 **Advisor:** Wang Xue
 
-![Best Thesis Certificate](./images/best_thesis.jpg)
+![Best Thesis Certificate](../images/best_thesis.jpg)
 
 This certificate was awarded for the excellence of my undergraduate thesis on "Camouflage Target Detection Based on Deep Learning Networks," recognized as one of the outstanding theses in Chongqing in 2023.
 
@@ -43,6 +43,6 @@ This certificate was awarded for the excellence of my undergraduate thesis on "C
 **Issue Date:** February 1, 2022  
 **Applicant:** Chongqing University  
 
-![Drone Patent](./images/drone-patent.png)
+![Drone Patent](../images/drone-patent.png)
 
 This utility model patent was granted for the design and implementation of a vision-based quadrotor UAV system using ROS, enhancing control precision and obstacle avoidance capabilities.
