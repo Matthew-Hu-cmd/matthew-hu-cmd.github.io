@@ -25,7 +25,7 @@ The National Undergraduate Innovation and Entrepreneurship Training Program, Cho
 
 ## 🧠 Multimodal Image Understanding and Generation 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">2024</div><img src='images/images/FashionFAE.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">2024</div><img src='images/FashionFAE.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 Controllable Multimodal Image-Text Understanding in the E-commerce Domain. (Southeast University, collaborating with Alibaba Group <img src="./images/alibaba-text.png" style="width: 6em; height: auto;">)
@@ -39,7 +39,7 @@ Controllable Multimodal Image-Text Understanding in the E-commerce Domain. (Sout
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">2024</div><img src='images/images/MADiff.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">2024</div><img src='images/MADiff.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 Multimodal Fashion Image Editing. (Southeast University, collaborating with Alibaba Group <img src="./images/alibaba-text.png" style="width: 6em; height: auto;">)
