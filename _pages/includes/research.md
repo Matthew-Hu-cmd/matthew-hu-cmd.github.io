@@ -21,7 +21,7 @@ while also delivering superior performance.
 Camouflage Image Generation with Text-Image Decoupling Prompt Mechanism \| \[Coming Soon\]
 
 - Construction of a Large-Scale Camouflaged Object Image-Text Pair Dataset
-- UNet with Text-Image Decoupled Cross-Attention
+- UNet with Text-Image Decoupled Cross-Attention for text-image prompt
 - Diffusion Model Adapter for Fine-Tuning SD1.5
 </div>
 </div>
