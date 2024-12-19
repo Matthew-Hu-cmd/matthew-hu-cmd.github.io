@@ -20,10 +20,10 @@ Controllable Multimodal Image-Text Understanding in the E-commerce Domain. (Sout
 
 Multimodal Fashion Image Editing. (Southeast University, collaborating with Alibaba Group <img src="./images/alibaba-text.png" style="width: 6em; height: auto;">)
 
-- Aimed to improve the fashion editing capabilities of existing models.
-- Proposed an attention-enhanced diffusion model to improve the editing capabilities on fashion images.
-- Text-generated masks to control the general area and shape of the target image.
-- Outperformed existing models on metrics CLIP-TD and CLIP-H ,etc.
+- Aimed to improve the image editing capabilities of existing models in the fashion domain.
+- Developed a MaskNet to predict text-generated masks to control the general area to be edited.
+- Proposed an training free attention-enhanced diffusion model to improve the editing capabilities on fashion images.
+- Outperformed existing models in metrics such as CLIP-T and CLIP-I, etc.
 </div>
 </div>
 
