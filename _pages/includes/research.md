@@ -4,7 +4,7 @@
 
 [Shifting Spotlight for Co-supervision: A Simple yet
 Efficient Single-branch Network to See Through
-Camouflage](https://arxiv.org/abs/2404.08936)   
+Camouflage](https://ieeexplore.ieee.org/abstract/document/10888376)   
 
 **Yang Hu**†, Jinxia Zhang†, Kaihua Zhang‡, Yin Yuan†, Jiale Huang†, Zechao Zhan†, Xin Wang*
 
