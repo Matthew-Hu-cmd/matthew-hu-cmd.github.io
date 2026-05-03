@@ -34,31 +34,122 @@ AcadHomepage
 
 ## 快速开始
 
-1. Fork本仓库到`USERNAME/USERNAME.github.io`，其中`USERNAME`是你的github用户名。
-1. 配置谷歌学术引用爬虫：
-    1. 在你的谷歌学术引用页面的url里找到你的谷歌学术ID：例如，在url https://scholar.google.com/citations?user=SCHOLAR_ID 中，`SCHOLAR_ID`部分即为你的谷歌学术ID。
-    1. 在github本仓库页面的`Settings -> Secrets -> Actions -> New repository secret`中，添加`GOOGLE_SCHOLAR_ID`变量：`name=GOOGLE_SCHOLAR_ID`、`value=SCHOLAR_ID`。
-    1. 在github本仓库页面的`Action`中，点击*"I understand my workflows, go ahead and enable them"*启用workflows by clicking *"。本action将会谷歌学术引用的统计量数据`gs_data.json`到本仓库的`google-scholar-stats`分支中。每次修改main分支的内容会触发该action。本action也会在每天08:00 UTC定时触发。
-1. 使用 [favicon-generator](https://redketchup.io/favicon-generator)生成favicon（网页icon文件），并下载所有文件到`REPO/images`。
-1. 修改主页配置文件[_config.yml](../_config.yml):
-    1. `title`: 主页标题
-    1. `description`: 主页的描述
-    1. `repository`: USER_NAME/REPO_NAME  
-    1. `google_analytics_id` (可选的): 谷歌Analytics ID
-    1. SEO相关的键值 (可选的): 从搜索引擎的控制台里获得对应的ID (例如：Google, Bing and Baidu)，然后粘贴到这里。
-    1. `author`: 主页作者信息，包括其他网页、Email、所在城市、大学等。
-    1. `google_scholar_stats_use_cdn`: 使用CDN读取存储于`https://raw.githubusercontent.com/`的google scholar引用统计数据，防止中国大陆地区被墙无法访问的情况。但是CDN有缓存，因此`google_scholar_stats_use_cdn : True`时，引用数据更新会有延迟。
-    1. 更多的配置信息在注释中有详细描述。
-1. 将你的主页内容添加到 [_pages/about.md](../_pages/about.md).
-1. 你的主页将会被部署到`https://USERNAME.github.io`.
+1. Fork 本仓库，并将仓库名改成 `USERNAME.github.io`，其中 `USERNAME` 是你的 GitHub 用户名。
+1. 修改配置文件 [`_config.yml`](../_config.yml)：
+   1. `title`：主页标题
+   1. `description`：主页描述
+   1. `repository`：填写成 `USERNAME/USERNAME.github.io`
+   1. `author`：头像、邮箱、GitHub、所在地、个人简介
+   1. `google_analytics_id` 和 SEO 验证项：按需填写
+1. 修改主页内容：
+   1. 主页入口文件是 [`_pages/about.md`](../_pages/about.md)
+   1. 各个主页模块在 [`_pages/includes`](../_pages/includes) 目录下
+1. 修改导航栏配置：[`_data/navigation.yml`](../_data/navigation.yml)
+1. 博客文章统一写在 [`_posts`](../_posts) 目录下。
+
+## 博客怎么写
+
+这个仓库已经支持独立博客页 `/blog/` 和单篇文章页。
+
+1. 在 [`_posts`](../_posts) 目录下新建一个 Markdown 文件。
+1. 文件名格式必须是：
+   ```text
+   YYYY-MM-DD-your-title.md
+   ```
+1. 文章开头建议写成：
+   ```yaml
+   ---
+   layout: post
+   title: "你的文章标题"
+   excerpt: "显示在博客列表页的一句话摘要"
+   ---
+   ```
+1. front matter 下面直接写 Markdown 正文即可。
 
 ## 本地调试
 
-1. 使用`git clone`将本项目克隆到本地。
-1. 安装Jekyll的构建环境，包括`Ruby`、`RubyGems`、`GCC`和`Make`。可参考[该教程](https://jekyllrb.com/docs/installation/#requirements)。
-1. 运行 `bash run_server.sh` 来启动Jekyll实时重载服务器。
-1. 在浏览器里打开 [http://127.0.0.1:4000](http://127.0.0.1:4000)。如果你修改了网页的源码，服务器会自动重新编译并刷新页面。
-1. 当你修改完毕你的页面以后, 使用`git`命令，`commit`你的改动并`push`到你的github仓库中。
+1. 使用 `git clone` 将本项目克隆到本地。
+1. 不要使用 macOS 自带的系统 Ruby，推荐使用 `rbenv` 管理 Ruby 版本。
+1. 这个项目当前建议使用 `Ruby 3.1.x`。更高版本例如 `3.2+` 可能和当前 `github-pages 215` 锁定的依赖不兼容。
+1. 安装并切换到项目 Ruby 版本：
+   ```bash
+   rbenv install 3.1.7
+   rbenv local 3.1.7
+   ruby -v
+   ```
+1. 安装项目所需的 Bundler：
+   ```bash
+   gem install bundler:2.2.19
+   ```
+1. 把依赖安装到项目目录中，而不是系统目录：
+   ```bash
+   bundle config set --local path 'vendor/bundle'
+   ```
+1. 如果你是 Apple Silicon Mac，建议补充下面几行，避免 `ffi` 编译失败：
+   ```bash
+   export PATH="/opt/homebrew/bin:$PATH"
+   bundle config set --local build.ffi "--enable-system-libffi"
+   export PKG_CONFIG_PATH="/opt/homebrew/opt/libffi/lib/pkgconfig"
+   export LDFLAGS="-L/opt/homebrew/opt/libffi/lib"
+   export CPPFLAGS="-I/opt/homebrew/opt/libffi/include"
+   ```
+1. 安装依赖：
+   ```bash
+   bundle _2.2.19_ install
+   ```
+1. 启动本地调试服务器：
+   ```bash
+   ./run_server.sh
+   ```
+1. 在浏览器里打开 [http://127.0.0.1:4000](http://127.0.0.1:4000)。
+1. 修改页面、博客、样式后，Jekyll 会自动重新生成并触发 LiveReload。
+
+### 本地常用文件
+
+- 主页入口：[`_pages/about.md`](../_pages/about.md)
+- 主页模块：[`_pages/includes`](../_pages/includes)
+- 博客列表页：[`_pages/blog.md`](../_pages/blog.md)
+- 博客文章布局：[`_layouts/post.html`](../_layouts/post.html)
+- 博客文章目录：[`_posts`](../_posts)
+- 导航配置：[`_data/navigation.yml`](../_data/navigation.yml)
+- 主样式文件：[`assets/css/main.scss`](../assets/css/main.scss)
+
+## GitHub 上怎么部署
+
+这个仓库已经自带 GitHub Pages 部署工作流：[`.github/workflows/jekyll.yml`](../.github/workflows/jekyll.yml)
+
+你只需要这样配置：
+
+1. 把代码 push 到 `main` 分支。
+1. 打开 GitHub 仓库的 `Settings -> Pages`。
+1. 在 `Source` 里选择 `GitHub Actions`。
+1. 打开仓库的 `Actions` 标签页，确认 Actions 已启用。
+1. 每次 push 到 `main`，`Deploy Jekyll site to Pages` 都会自动构建并部署。
+1. 你也可以在 `Actions -> Deploy Jekyll site to Pages -> Run workflow` 手动触发一次部署。
+
+部署成功后，主页通常会发布到：
+
+- `https://USERNAME.github.io/`
+
+## GitHub 上怎么配置 Google Scholar Action
+
+仓库里还有一个可选工作流：[`.github/workflows/google_scholar_crawler.yaml`](../.github/workflows/google_scholar_crawler.yaml)
+
+如果你想自动更新 Google Scholar 引用信息，可以这样配置：
+
+1. 找到你的 Google Scholar ID。比如下面这个链接里的 `SCHOLAR_ID`：
+   ```text
+   https://scholar.google.com/citations?user=SCHOLAR_ID
+   ```
+1. 打开 GitHub 仓库的 `Settings -> Secrets and variables -> Actions`。
+1. 新建一个 repository secret：
+   - Name: `GOOGLE_SCHOLAR_ID`
+   - Value: 你的 Scholar ID
+1. 打开 [`.github/workflows/google_scholar_crawler.yaml`](../.github/workflows/google_scholar_crawler.yaml)，把末尾注释掉的 `env` 配置取消注释，让工作流真正读取这个 secret。
+1. 打开 GitHub 的 `Actions` 页面并启用该 workflow。
+1. 这个 workflow 会把生成的引用 JSON 推送到 `google-scholar-stats` 分支。
+
+如果你暂时不需要 Google Scholar 自动更新，可以先不用开这个 workflow。
 
 # Acknowledges
 

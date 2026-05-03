@@ -12,6 +12,9 @@ main:
   - title: "Research"
     url: "/#-research"
 
+  - title: "Blog"
+    url: "/blog/"
+
   - title: "Honors and Awards"
     url: "/#-honors-and-awards"
 
