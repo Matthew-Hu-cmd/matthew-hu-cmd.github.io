@@ -226,6 +226,17 @@ h1:before, .anchor:before {
     font-size: 1.05rem;
 }
 
+.visitor-map {
+    margin: 0.75rem auto 0;
+    max-width: 320px;
+}
+
+.visitor-map img,
+.visitor-map iframe,
+.visitor-map div {
+    max-width: 100%;
+}
+
 @include breakpoint($medium) {
     .blog-post-list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
